@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */; };
+		FF62626B26D1EAE100561366 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62626A26D1EAE100561366 /* API.swift */; };
+		FF62627326D1ED1200561366 /* CleanRawgMockAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62627226D1ED1200561366 /* CleanRawgMockAppTests.swift */; };
+		FF78C56C26D2AC400050B654 /* TopPickVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C56B26D2AC400050B654 /* TopPickVM.swift */; };
+		FF78C56F26D2AC6C0050B654 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C56E26D2AC6C0050B654 /* HomeModel.swift */; };
+		FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */; };
+		FF78C57326D2C4000050B654 /* MainContentHomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C57226D2C4000050B654 /* MainContentHomeVM.swift */; };
 		FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12726D1325000D55EB9 /* AppDelegate.swift */; };
 		FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */; };
 		FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12B26D1325000D55EB9 /* ViewController.swift */; };
@@ -14,9 +21,35 @@
 		FFF2E13226D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E13026D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld */; };
 		FFF2E13426D1325100D55EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E13326D1325100D55EB9 /* Assets.xcassets */; };
 		FFF2E13726D1325100D55EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E13526D1325100D55EB9 /* LaunchScreen.storyboard */; };
+		FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E14226D134A700D55EB9 /* HomeView.swift */; };
+		FFF2E14C26D13C8E00D55EB9 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E14B26D13C8E00D55EB9 /* AccountController.swift */; };
+		FFF2E14E26D13CAB00D55EB9 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E14D26D13CAB00D55EB9 /* AccountModel.swift */; };
+		FFF2E15126D147AD00D55EB9 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E15026D147AD00D55EB9 /* Extentions.swift */; };
+		FFF2E15326D1523A00D55EB9 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E15226D1523A00D55EB9 /* ShimmerEffect.swift */; };
+		FFF2E15526D1584200D55EB9 /* HomeViewTopContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E15426D1584200D55EB9 /* HomeViewTopContent.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF62627526D1ED1200561366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF2E11C26D1325000D55EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF2E12326D1325000D55EB9;
+			remoteInfo = CleanRawgMockApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachEnumerated.swift; sourceTree = "<group>"; };
+		FF62626A26D1EAE100561366 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FF62627026D1ED1200561366 /* CleanRawgMockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanRawgMockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF62627226D1ED1200561366 /* CleanRawgMockAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanRawgMockAppTests.swift; sourceTree = "<group>"; };
+		FF62627426D1ED1200561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF62627A26D1ED6F00561366 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		FF78C56B26D2AC400050B654 /* TopPickVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPickVM.swift; sourceTree = "<group>"; };
+		FF78C56E26D2AC6C0050B654 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadRemoteImage.swift; sourceTree = "<group>"; };
+		FF78C57226D2C4000050B654 /* MainContentHomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentHomeVM.swift; sourceTree = "<group>"; };
 		FFF2E12426D1325000D55EB9 /* CleanRawgMockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRawgMockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2E12726D1325000D55EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,9 +59,22 @@
 		FFF2E13326D1325100D55EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF2E13626D1325100D55EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF2E13826D1325100D55EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF2E14226D134A700D55EB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FFF2E14B26D13C8E00D55EB9 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		FFF2E14D26D13CAB00D55EB9 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		FFF2E15026D147AD00D55EB9 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		FFF2E15226D1523A00D55EB9 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		FFF2E15426D1584200D55EB9 /* HomeViewTopContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTopContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF62626D26D1ED1200561366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF2E12126D1325000D55EB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +85,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF62626926D1EACA00561366 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				FF62626A26D1EAE100561366 /* API.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		FF62627126D1ED1200561366 /* CleanRawgMockAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF62627226D1ED1200561366 /* CleanRawgMockAppTests.swift */,
+				FF62627426D1ED1200561366 /* Info.plist */,
+			);
+			path = CleanRawgMockAppTests;
+			sourceTree = "<group>";
+		};
+		FF62627B26D1F1A000561366 /* PushNotif */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PushNotif;
+			sourceTree = "<group>";
+		};
+		FF78C56D26D2AC5E0050B654 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF78C56E26D2AC6C0050B654 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF78C57426D3523A0050B654 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FF78C57626D352470050B654 /* View */,
+				FF78C57526D352410050B654 /* ViewModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FF78C57526D352410050B654 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF78C57626D352470050B654 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FFF2E11B26D1325000D55EB9 = {
 			isa = PBXGroup;
 			children = (
 				FFF2E12626D1325000D55EB9 /* CleanRawgMockApp */,
+				FF62627126D1ED1200561366 /* CleanRawgMockAppTests */,
 				FFF2E12526D1325000D55EB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF2E12426D1325000D55EB9 /* CleanRawgMockApp.app */,
+				FF62627026D1ED1200561366 /* CleanRawgMockAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,7 +161,14 @@
 		FFF2E12626D1325000D55EB9 /* CleanRawgMockApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF78C57426D3523A0050B654 /* Search */,
+				FF78C56D26D2AC5E0050B654 /* Model */,
+				FF62626926D1EACA00561366 /* Secrets */,
+				FFF2E14F26D1479300D55EB9 /* Extention */,
+				FFF2E13E26D1348000D55EB9 /* Home */,
 				FFF2E12726D1325000D55EB9 /* AppDelegate.swift */,
+				FF62627B26D1F1A000561366 /* PushNotif */,
+				FFF2E14426D13A9200D55EB9 /* Account */,
 				FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */,
 				FFF2E12B26D1325000D55EB9 /* ViewController.swift */,
 				FFF2E12D26D1325000D55EB9 /* Main.storyboard */,
@@ -66,13 +176,79 @@
 				FFF2E13526D1325100D55EB9 /* LaunchScreen.storyboard */,
 				FFF2E13826D1325100D55EB9 /* Info.plist */,
 				FFF2E13026D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld */,
+				FF62627A26D1ED6F00561366 /* Config.xcconfig */,
 			);
 			path = CleanRawgMockApp;
+			sourceTree = "<group>";
+		};
+		FFF2E13E26D1348000D55EB9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2E14026D1348D00D55EB9 /* ViewModel */,
+				FFF2E13F26D1348700D55EB9 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFF2E13F26D1348700D55EB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2E14226D134A700D55EB9 /* HomeView.swift */,
+				FFF2E15426D1584200D55EB9 /* HomeViewTopContent.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFF2E14026D1348D00D55EB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF78C56B26D2AC400050B654 /* TopPickVM.swift */,
+				FF78C57226D2C4000050B654 /* MainContentHomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFF2E14426D13A9200D55EB9 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2E14B26D13C8E00D55EB9 /* AccountController.swift */,
+				FFF2E14D26D13CAB00D55EB9 /* AccountModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FFF2E14F26D1479300D55EB9 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2E15026D147AD00D55EB9 /* Extentions.swift */,
+				FFF2E15226D1523A00D55EB9 /* ShimmerEffect.swift */,
+				FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */,
+				FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF62626F26D1ED1200561366 /* CleanRawgMockAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF62627726D1ED1200561366 /* Build configuration list for PBXNativeTarget "CleanRawgMockAppTests" */;
+			buildPhases = (
+				FF62626C26D1ED1200561366 /* Sources */,
+				FF62626D26D1ED1200561366 /* Frameworks */,
+				FF62626E26D1ED1200561366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF62627626D1ED1200561366 /* PBXTargetDependency */,
+			);
+			name = CleanRawgMockAppTests;
+			productName = CleanRawgMockAppTests;
+			productReference = FF62627026D1ED1200561366 /* CleanRawgMockAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FFF2E12326D1325000D55EB9 /* CleanRawgMockApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF2E13B26D1325100D55EB9 /* Build configuration list for PBXNativeTarget "CleanRawgMockApp" */;
@@ -99,6 +275,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					FF62626F26D1ED1200561366 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FFF2E12326D1325000D55EB9;
+					};
 					FFF2E12326D1325000D55EB9 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -118,11 +298,19 @@
 			projectRoot = "";
 			targets = (
 				FFF2E12326D1325000D55EB9 /* CleanRawgMockApp */,
+				FF62626F26D1ED1200561366 /* CleanRawgMockAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF62626E26D1ED1200561366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF2E12226D1325000D55EB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,18 +324,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF62626C26D1ED1200561366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF62627326D1ED1200561366 /* CleanRawgMockAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF2E12026D1325000D55EB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF62626B26D1EAE100561366 /* API.swift in Sources */,
 				FFF2E13226D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld in Sources */,
 				FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */,
+				FFF2E14E26D13CAB00D55EB9 /* AccountModel.swift in Sources */,
+				FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */,
+				FFF2E15526D1584200D55EB9 /* HomeViewTopContent.swift in Sources */,
 				FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */,
+				FFF2E15126D147AD00D55EB9 /* Extentions.swift in Sources */,
+				FFF2E14C26D13C8E00D55EB9 /* AccountController.swift in Sources */,
+				FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */,
+				FF78C56F26D2AC6C0050B654 /* HomeModel.swift in Sources */,
+				FFF2E15326D1523A00D55EB9 /* ShimmerEffect.swift in Sources */,
+				FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */,
 				FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */,
+				FF78C57326D2C4000050B654 /* MainContentHomeVM.swift in Sources */,
+				FF78C56C26D2AC400050B654 /* TopPickVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF62627626D1ED1200561366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF2E12326D1325000D55EB9 /* CleanRawgMockApp */;
+			targetProxy = FF62627526D1ED1200561366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FFF2E12D26D1325000D55EB9 /* Main.storyboard */ = {
@@ -169,6 +385,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF62627826D1ED1200561366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				INFOPLIST_FILE = CleanRawgMockAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RawgMockApp.CleanRawgMockAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanRawgMockApp.app/CleanRawgMockApp";
+			};
+			name = Debug;
+		};
+		FF62627926D1ED1200561366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLGCGGKJB5;
+				INFOPLIST_FILE = CleanRawgMockAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RawgMockApp.CleanRawgMockAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanRawgMockApp.app/CleanRawgMockApp";
+			};
+			name = Release;
+		};
 		FFF2E13926D1325100D55EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +582,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF62627726D1ED1200561366 /* Build configuration list for PBXNativeTarget "CleanRawgMockAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF62627826D1ED1200561366 /* Debug */,
+				FF62627926D1ED1200561366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FFF2E11F26D1325000D55EB9 /* Build configuration list for PBXProject "CleanRawgMockApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
