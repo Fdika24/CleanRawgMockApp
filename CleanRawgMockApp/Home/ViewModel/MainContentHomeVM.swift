@@ -26,6 +26,9 @@ class MainContentHome:ObservableObject {
     
     func fetchAPI() {
         //Idle is the 1st state, when the app loads, loading state is when we want to add more content to it
+        if State != .idle {
+            State = .loading
+        }
         let path = {() -> URLComponents in
             self.myAPI.link!.path = "/api/games"
             self.myAPI.link!.queryItems = [
@@ -47,7 +50,7 @@ class MainContentHome:ObservableObject {
                 self?.page+=1
             } receiveValue: { [weak self] result in
                 self?.MainContent += result.results
-                self?.State = .loading
+                self?.State = .done
                 // Nanti mau naro jika full, state = .load tapi nanti dulu hehehe
             }
             .store(in: &cancellables)

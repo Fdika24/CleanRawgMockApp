@@ -7,17 +7,7 @@
 
 import SwiftUI
 
-struct Item: Identifiable {
-    let id: String
-    
-    init() {
-        id = UUID().uuidString
-    }
-}
-
 struct HomeView: View {
-    @State
-        var items = (0...100).map { _ in Item() }
     @StateObject var homeTopPicks = TopPicks()
     @StateObject var homeContent = MainContentHome()
     @ViewBuilder var body: some View {
@@ -44,7 +34,7 @@ struct HomeView: View {
                         .frame(width:UIScreen.width,height: 230)
                         .tabViewStyle(PageTabViewStyle())
                     }
-                    //MARK: Main content - kudu di perbaikin
+                    //MARK: Main content - fixed
                     if homeContent.State == .idle {
                             ListItemShimmer()
                                 .padding(.top)
@@ -52,18 +42,20 @@ struct HomeView: View {
                                 .padding(.bottom,5)
                             Divider()
                         }
-                    ForEach(homeContent.MainContent){data in
-                        homeContentItem(name: data.name ?? "", image: data.image ?? "", released: data.released ?? "")
-                            .padding(.top,10)
-                            .padding(.horizontal)
-                            .padding(.bottom,5)
-                        Divider()
+                    LazyVStack{
+                        ForEach(homeContent.MainContent){data in
+                            homeContentItem(name: data.name ?? "", image: data.image ?? "", released: data.released ?? "")
+                                .padding(.top,10)
+                                .padding(.horizontal)
+                                .padding(.bottom,5)
+                                .onAppear{
+                                    homeContent.appendData(currentItem: data)
+                                }
+                            Divider()
+                        }
                     }
                     if homeContent.State == .loading {
                         ProgressView()
-                            .onAppear{
-                                homeContent.fetchAPI()
-                            }
                     }
                     Spacer()
                 }
@@ -103,6 +95,12 @@ struct homeContentItem: View {
     let name:String
     let image:String
     let released:String
+    
+    init(name:String,image:String,released:String) {
+        self.name = name
+        self.image = image
+        self.released = released
+    }
     var body: some View {
         HStack{
             RemoteImage(url: image)

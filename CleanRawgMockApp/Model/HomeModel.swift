@@ -43,3 +43,4 @@ struct BasicHome:Codable,Identifiable {
         case rank = "rating_top"
         }
 }
+
