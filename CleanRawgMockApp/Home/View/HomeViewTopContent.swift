@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeViewTopContent: View {
+    @Binding var showSearch:Bool
     var body: some View {
         ZStack {
             Rectangle()
@@ -36,6 +37,9 @@ struct HomeViewTopContent: View {
                         }.padding(.horizontal)
                     )
                     .padding(.bottom)
+                    .onTapGesture {
+                        showSearch = true
+                    }
             }
             .padding(.top,UIScreen.height*0.06)
             .padding(.horizontal)

@@ -15,6 +15,10 @@
 		FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */; };
 		FF78C57326D2C4000050B654 /* MainContentHomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C57226D2C4000050B654 /* MainContentHomeVM.swift */; };
 		FF81471C26D64B4000A3F757 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81471B26D64B4000A3F757 /* SearchView.swift */; };
+		FF81472026D6517A00A3F757 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81471F26D6517A00A3F757 /* SearchModel.swift */; };
+		FF81472226D6521800A3F757 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81472126D6521800A3F757 /* SearchVM.swift */; };
+		FF81472426D65B3900A3F757 /* ListItemShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81472326D65B3900A3F757 /* ListItemShimmer.swift */; };
+		FF81472626D65B7900A3F757 /* listContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81472526D65B7900A3F757 /* listContentItem.swift */; };
 		FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12726D1325000D55EB9 /* AppDelegate.swift */; };
 		FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */; };
 		FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12B26D1325000D55EB9 /* ViewController.swift */; };
@@ -52,6 +56,10 @@
 		FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadRemoteImage.swift; sourceTree = "<group>"; };
 		FF78C57226D2C4000050B654 /* MainContentHomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentHomeVM.swift; sourceTree = "<group>"; };
 		FF81471B26D64B4000A3F757 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FF81471F26D6517A00A3F757 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		FF81472126D6521800A3F757 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		FF81472326D65B3900A3F757 /* ListItemShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemShimmer.swift; sourceTree = "<group>"; };
+		FF81472526D65B7900A3F757 /* listContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listContentItem.swift; sourceTree = "<group>"; };
 		FFF2E12426D1325000D55EB9 /* CleanRawgMockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRawgMockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2E12726D1325000D55EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				FF78C56E26D2AC6C0050B654 /* HomeModel.swift */,
+				FF81471F26D6517A00A3F757 /* SearchModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,7 +140,7 @@
 		FF78C57526D352410050B654 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FF81471B26D64B4000A3F757 /* SearchView.swift */,
+				FF81472126D6521800A3F757 /* SearchVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -139,8 +148,32 @@
 		FF78C57626D352470050B654 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF81471B26D64B4000A3F757 /* SearchView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FFE16F9326D743FB004D1125 /* ItemDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				FFE16F9526D74416004D1125 /* ViewModel */,
+				FFE16F9426D7440E004D1125 /* View */,
+			);
+			path = ItemDisplay;
+			sourceTree = "<group>";
+		};
+		FFE16F9426D7440E004D1125 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFE16F9526D74416004D1125 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FFF2E11B26D1325000D55EB9 = {
@@ -164,15 +197,16 @@
 		FFF2E12626D1325000D55EB9 /* CleanRawgMockApp */ = {
 			isa = PBXGroup;
 			children = (
-				FF78C57426D3523A0050B654 /* Search */,
 				FF78C56D26D2AC5E0050B654 /* Model */,
 				FF62626926D1EACA00561366 /* Secrets */,
 				FFF2E14F26D1479300D55EB9 /* Extention */,
+				FF78C57426D3523A0050B654 /* Search */,
 				FFF2E13E26D1348000D55EB9 /* Home */,
-				FFF2E12726D1325000D55EB9 /* AppDelegate.swift */,
+				FFE16F9326D743FB004D1125 /* ItemDisplay */,
 				FF62627B26D1F1A000561366 /* PushNotif */,
 				FFF2E14426D13A9200D55EB9 /* Account */,
 				FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */,
+				FFF2E12726D1325000D55EB9 /* AppDelegate.swift */,
 				FFF2E12B26D1325000D55EB9 /* ViewController.swift */,
 				FFF2E12D26D1325000D55EB9 /* Main.storyboard */,
 				FFF2E13326D1325100D55EB9 /* Assets.xcassets */,
@@ -227,6 +261,8 @@
 				FFF2E15226D1523A00D55EB9 /* ShimmerEffect.swift */,
 				FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */,
 				FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */,
+				FF81472326D65B3900A3F757 /* ListItemShimmer.swift */,
+				FF81472526D65B7900A3F757 /* listContentItem.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -342,17 +378,21 @@
 				FF62626B26D1EAE100561366 /* API.swift in Sources */,
 				FFF2E13226D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld in Sources */,
 				FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */,
+				FF81472026D6517A00A3F757 /* SearchModel.swift in Sources */,
 				FFF2E14E26D13CAB00D55EB9 /* AccountModel.swift in Sources */,
 				FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */,
 				FFF2E15526D1584200D55EB9 /* HomeViewTopContent.swift in Sources */,
 				FF81471C26D64B4000A3F757 /* SearchView.swift in Sources */,
 				FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */,
+				FF81472226D6521800A3F757 /* SearchVM.swift in Sources */,
 				FFF2E15126D147AD00D55EB9 /* Extentions.swift in Sources */,
 				FFF2E14C26D13C8E00D55EB9 /* AccountController.swift in Sources */,
+				FF81472426D65B3900A3F757 /* ListItemShimmer.swift in Sources */,
 				FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */,
 				FF78C56F26D2AC6C0050B654 /* HomeModel.swift in Sources */,
 				FFF2E15326D1523A00D55EB9 /* ShimmerEffect.swift in Sources */,
 				FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */,
+				FF81472626D65B7900A3F757 /* listContentItem.swift in Sources */,
 				FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */,
 				FF78C57326D2C4000050B654 /* MainContentHomeVM.swift in Sources */,
 				FF78C56C26D2AC400050B654 /* TopPickVM.swift in Sources */,

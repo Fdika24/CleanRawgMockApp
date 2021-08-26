@@ -34,8 +34,7 @@ class MainContentHome:ObservableObject {
             self.myAPI.link!.queryItems = [
                 URLQueryItem(name: "key", value: self.myAPI.key),
                 URLQueryItem(name: "ordering", value: "updated"),
-                URLQueryItem(name: "page", value: String(page
-                ))
+                URLQueryItem(name: "page", value: String(page))
             ]
             return myAPI.link!
         }()
@@ -46,12 +45,16 @@ class MainContentHome:ObservableObject {
             .decode(type: HomeModelBasic.self, decoder: JSONDecoder())
             .receive(on:RunLoop.main)
             .sink {[weak self] complete in
-                print("fetching Main Content :\(complete) on page \(self!.page)")
-                self?.page+=1
+                switch complete {
+                case .finished :
+                    print("fetching Main Content :\(complete) on page \(self!.page)")
+                    self?.page+=1 // ini masih harus diperbaikin logicnya, sayang ga kepake
+                case .failure(let error):
+                    print("the error : \(error)")
+                }
             } receiveValue: { [weak self] result in
                 self?.MainContent += result.results
                 self?.State = .done
-                // Nanti mau naro jika full, state = .load tapi nanti dulu hehehe
             }
             .store(in: &cancellables)
 

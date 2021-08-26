@@ -18,7 +18,6 @@ class TopPicks:ObservableObject {
     @Published var state:viewState = .load
     private var myAPI = Api()
     private var cancellables = Set<AnyCancellable>()
-    private var page = "1"
     
     //Initialize when class is created, hope this works so that i dont have to add onAppear ?
     init(){
@@ -52,11 +51,15 @@ class TopPicks:ObservableObject {
             }
             .decode(type: HomeModelTopPicks.self, decoder: JSONDecoder())
             .sink { (complete) in
-                print("Top View Completion : \(complete)")
+                switch complete{
+                case .finished :
+                    print("Top View Completion : \(complete)")
+                case .failure(let error):
+                    print("There's an error : \(error)")
+                }
             } receiveValue: { [weak self] (result) in
                 self?.state = .done
                 self?.topPicks = result.results
-                self?.page = result.next
             }
             .store(in: &cancellables)
 
