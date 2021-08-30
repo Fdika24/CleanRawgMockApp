@@ -41,11 +41,16 @@ struct RemoteImage:View {
                     }
                     return data
                 }
-                .sink { (complete) in
-                   // print("Image Completion : \(complete)")
+                .sink {[weak self] (complete) in
+                    switch complete{
+                    case .failure(let error):
+                        print("Error \(error)")
+                        self?.state = .failed
+                    case .finished:
+                        self?.state = .done
+                    }
                 } receiveValue: {[weak self] (data) in
                     self?.data = data
-                    self?.state = .done
                 }
                 .store(in: &cancellables)
         }
