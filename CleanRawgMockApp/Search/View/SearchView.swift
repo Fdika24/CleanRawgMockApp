@@ -16,19 +16,24 @@ struct SearchView: View {
     var body: some View {
         VStack{
             HStack {
-                if searchingItems.searching == "" {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(.black.opacity(0.5))
-                        .animation(.easeInOut)
-                }
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.black.opacity(0.5))
                 TextField("Search",text:$searchingItems.searching,onCommit:{searchingItems.fetchData()})
                     .animation(.easeInOut)
+                if searchingItems.searching != "" {
+                    Button(action: {searchingItems.searching = ""}) {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.red)
+                            .animation(.easeInOut)
+                    }
+                }
             }
             .padding(5)
             .padding(.horizontal,4)
             .background(Color.black.opacity(0.1))
             .cornerRadius(10)
             .padding(.horizontal)
+            //Test Button
             Button("send"){
                 searchingItems.fetchData()
             }

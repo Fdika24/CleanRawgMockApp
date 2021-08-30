@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct HomeViewTopContent: View {
-    @Binding var showSearch:Bool
+    @State var userProfile = ProfileModel.name
     var body: some View {
         ZStack {
             Rectangle()
                 .fill(Color.black)
-                .frame(width:UIScreen.width,height: UIScreen.height*0.20)
+                .frame(width:UIScreen.width,height: UIScreen.height*0.15)
             VStack(alignment:.leading) {
                 // Ini sampe sekarang ga tau kenapa klo ga bikin hstack abis itu di spacerin, ntar malah ketengah, ga ke samping, pdhl udh di set widthnya
                 HStack {
-                    Text("Welcome")
+                    Text("Welcome, \(self.userProfile)!")
                         .font(.title2)
                         .fontWeight(.medium)
                     Spacer()
@@ -26,20 +26,6 @@ struct HomeViewTopContent: View {
                     .font(.footnote)
                     .fontWeight(.light)
                 Spacer()
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: UIScreen.width*0.95, height: 50)
-                    .overlay(
-                        HStack {
-                            Text("Adventure Quest World")
-                                .font(.callout)
-                                .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
-                            Spacer()
-                        }.padding(.horizontal)
-                    )
-                    .padding(.bottom)
-                    .onTapGesture {
-                        showSearch = true
-                    }
             }
             .padding(.top,UIScreen.height*0.06)
             .padding(.horizontal)

@@ -20,7 +20,7 @@ class Searching:ObservableObject {
     
     @Published var searchedItems = [Result]()
     @Published var State:state = .load
-    @Published var searching = "dota"
+    @Published var searching = ""
     
     private var myAPI = Api()
     private var cancellables = Set<AnyCancellable>()
@@ -30,6 +30,9 @@ class Searching:ObservableObject {
     }
     
     func fetchData(kase:appendState = .new) {
+        if kase == .new {
+            self.page = 1
+        }
         self.State = .loading
         let path = {() -> URLComponents in
             self.myAPI.link!.path = "/api/games"
@@ -43,15 +46,7 @@ class Searching:ObservableObject {
         
         let request = URLRequest(url: path.url!)
         URLSession.shared.dataTaskPublisher(for: request)
-            .tryMap { (data,response) -> Data in 
-                guard
-                    let response = response as? HTTPURLResponse,
-                    response.statusCode >= 200 && response.statusCode < 300 else {
-                    self.State = .failed
-                    throw URLError(.badURL)
-                }
-                return data
-            }
+            .tryMap { $0.data }
             .decode(type: Search.self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
             .sink {[weak self] complete in

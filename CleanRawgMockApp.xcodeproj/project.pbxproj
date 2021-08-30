@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF169D3426D8C47400E358FB /* ItemDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF169D3326D8C47400E358FB /* ItemDisplayView.swift */; };
 		FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */; };
 		FF62626B26D1EAE100561366 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62626A26D1EAE100561366 /* API.swift */; };
 		FF62627326D1ED1200561366 /* CleanRawgMockAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62627226D1ED1200561366 /* CleanRawgMockAppTests.swift */; };
+		FF6EE3FE26DB8E8D00D85C34 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EE3FD26DB8E8D00D85C34 /* Account.storyboard */; };
+		FF6EE40126DB8EA900D85C34 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EE3FF26DB8EA900D85C34 /* Search.storyboard */; };
+		FF6EE40426DB8EDC00D85C34 /* Favourites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EE40326DB8EDC00D85C34 /* Favourites.storyboard */; };
 		FF78C56C26D2AC400050B654 /* TopPickVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C56B26D2AC400050B654 /* TopPickVM.swift */; };
 		FF78C56F26D2AC6C0050B654 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C56E26D2AC6C0050B654 /* HomeModel.swift */; };
 		FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */; };
@@ -19,11 +23,17 @@
 		FF81472226D6521800A3F757 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81472126D6521800A3F757 /* SearchVM.swift */; };
 		FF81472426D65B3900A3F757 /* ListItemShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81472326D65B3900A3F757 /* ListItemShimmer.swift */; };
 		FF81472626D65B7900A3F757 /* listContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81472526D65B7900A3F757 /* listContentItem.swift */; };
+		FF8431D926DCB6FC007FFC83 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8431D826DCB6FC007FFC83 /* SearchVC.swift */; };
+		FF8431DB26DCBB56007FFC83 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8431DA26DCBB56007FFC83 /* UserProfile.swift */; };
+		FF8431DD26DCC5E4007FFC83 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8431DC26DCC5E4007FFC83 /* FavouriteVC.swift */; };
+		FF881E8C26DD034C00832240 /* myFav.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF881E8A26DD034C00832240 /* myFav.xcdatamodeld */; };
+		FF969EF226DCD57000FAF494 /* ItemDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF969EF126DCD57000FAF494 /* ItemDisplayModel.swift */; };
+		FF969EF426DCD74600FAF494 /* FavouriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF969EF326DCD74600FAF494 /* FavouriteModel.swift */; };
 		FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12726D1325000D55EB9 /* AppDelegate.swift */; };
 		FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */; };
 		FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12B26D1325000D55EB9 /* ViewController.swift */; };
 		FFF2E12F26D1325000D55EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E12D26D1325000D55EB9 /* Main.storyboard */; };
-		FFF2E13226D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E13026D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld */; };
+		FFF2E13226D1325000D55EB9 /* FavData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E13026D1325000D55EB9 /* FavData.xcdatamodeld */; };
 		FFF2E13426D1325100D55EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E13326D1325100D55EB9 /* Assets.xcassets */; };
 		FFF2E13726D1325100D55EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E13526D1325100D55EB9 /* LaunchScreen.storyboard */; };
 		FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E14226D134A700D55EB9 /* HomeView.swift */; };
@@ -45,12 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF169D3326D8C47400E358FB /* ItemDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplayView.swift; sourceTree = "<group>"; };
 		FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachEnumerated.swift; sourceTree = "<group>"; };
 		FF62626A26D1EAE100561366 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FF62627026D1ED1200561366 /* CleanRawgMockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanRawgMockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF62627226D1ED1200561366 /* CleanRawgMockAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanRawgMockAppTests.swift; sourceTree = "<group>"; };
 		FF62627426D1ED1200561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF62627A26D1ED6F00561366 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		FF6EE3FD26DB8E8D00D85C34 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		FF6EE40026DB8EA900D85C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CleanRawgMockApp/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		FF6EE40326DB8EDC00D85C34 /* Favourites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favourites.storyboard; sourceTree = "<group>"; };
 		FF78C56B26D2AC400050B654 /* TopPickVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPickVM.swift; sourceTree = "<group>"; };
 		FF78C56E26D2AC6C0050B654 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		FF78C57026D2B7130050B654 /* LoadRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadRemoteImage.swift; sourceTree = "<group>"; };
@@ -60,6 +74,12 @@
 		FF81472126D6521800A3F757 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
 		FF81472326D65B3900A3F757 /* ListItemShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemShimmer.swift; sourceTree = "<group>"; };
 		FF81472526D65B7900A3F757 /* listContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listContentItem.swift; sourceTree = "<group>"; };
+		FF8431D826DCB6FC007FFC83 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		FF8431DA26DCBB56007FFC83 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		FF8431DC26DCC5E4007FFC83 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
+		FF881E8B26DD034C00832240 /* myFav.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myFav.xcdatamodel; sourceTree = "<group>"; };
+		FF969EF126DCD57000FAF494 /* ItemDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplayModel.swift; sourceTree = "<group>"; };
+		FF969EF326DCD74600FAF494 /* FavouriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModel.swift; sourceTree = "<group>"; };
 		FFF2E12426D1325000D55EB9 /* CleanRawgMockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRawgMockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2E12726D1325000D55EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,11 +139,49 @@
 			path = PushNotif;
 			sourceTree = "<group>";
 		};
+		FF6EE40226DB8EC600D85C34 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				FF881E8126DCD93300832240 /* Persistance */,
+				FF6EE40626DB8EE900D85C34 /* ViewModel */,
+				FF6EE40526DB8EE500D85C34 /* View */,
+				FF6EE40326DB8EDC00D85C34 /* Favourites.storyboard */,
+				FF8431DC26DCC5E4007FFC83 /* FavouriteVC.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		FF6EE40526DB8EE500D85C34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF6EE40626DB8EE900D85C34 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF6EE40726DB8F2B00D85C34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2E14D26D13CAB00D55EB9 /* AccountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FF78C56D26D2AC5E0050B654 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FFF2E13026D1325000D55EB9 /* FavData.xcdatamodeld */,
 				FF78C56E26D2AC6C0050B654 /* HomeModel.swift */,
 				FF81471F26D6517A00A3F757 /* SearchModel.swift */,
+				FF8431DA26DCBB56007FFC83 /* UserProfile.swift */,
+				FF969EF126DCD57000FAF494 /* ItemDisplayModel.swift */,
+				FF969EF326DCD74600FAF494 /* FavouriteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +189,8 @@
 		FF78C57426D3523A0050B654 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FF6EE3FF26DB8EA900D85C34 /* Search.storyboard */,
+				FF8431D826DCB6FC007FFC83 /* SearchVC.swift */,
 				FF78C57626D352470050B654 /* View */,
 				FF78C57526D352410050B654 /* ViewModel */,
 			);
@@ -153,6 +213,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FF881E8126DCD93300832240 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		FF881E8D26DD04DF00832240 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */,
+				FFF2E12726D1325000D55EB9 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		FFE16F9326D743FB004D1125 /* ItemDisplay */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +241,7 @@
 		FFE16F9426D7440E004D1125 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF169D3326D8C47400E358FB /* ItemDisplayView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,23 +274,21 @@
 		FFF2E12626D1325000D55EB9 /* CleanRawgMockApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF881E8D26DD04DF00832240 /* Delegates */,
 				FF78C56D26D2AC5E0050B654 /* Model */,
+				FF6EE40226DB8EC600D85C34 /* Favourites */,
 				FF62626926D1EACA00561366 /* Secrets */,
-				FFF2E14F26D1479300D55EB9 /* Extention */,
+				FFF2E14F26D1479300D55EB9 /* Reusables */,
 				FF78C57426D3523A0050B654 /* Search */,
 				FFF2E13E26D1348000D55EB9 /* Home */,
 				FFE16F9326D743FB004D1125 /* ItemDisplay */,
 				FF62627B26D1F1A000561366 /* PushNotif */,
 				FFF2E14426D13A9200D55EB9 /* Account */,
-				FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */,
-				FFF2E12726D1325000D55EB9 /* AppDelegate.swift */,
-				FFF2E12B26D1325000D55EB9 /* ViewController.swift */,
-				FFF2E12D26D1325000D55EB9 /* Main.storyboard */,
 				FFF2E13326D1325100D55EB9 /* Assets.xcassets */,
 				FFF2E13526D1325100D55EB9 /* LaunchScreen.storyboard */,
 				FFF2E13826D1325100D55EB9 /* Info.plist */,
-				FFF2E13026D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld */,
 				FF62627A26D1ED6F00561366 /* Config.xcconfig */,
+				FF881E8A26DD034C00832240 /* myFav.xcdatamodeld */,
 			);
 			path = CleanRawgMockApp;
 			sourceTree = "<group>";
@@ -221,6 +296,8 @@
 		FFF2E13E26D1348000D55EB9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FFF2E12D26D1325000D55EB9 /* Main.storyboard */,
+				FFF2E12B26D1325000D55EB9 /* ViewController.swift */,
 				FFF2E14026D1348D00D55EB9 /* ViewModel */,
 				FFF2E13F26D1348700D55EB9 /* View */,
 			);
@@ -248,13 +325,14 @@
 		FFF2E14426D13A9200D55EB9 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				FF6EE3FD26DB8E8D00D85C34 /* Account.storyboard */,
+				FF6EE40726DB8F2B00D85C34 /* Model */,
 				FFF2E14B26D13C8E00D55EB9 /* AccountController.swift */,
-				FFF2E14D26D13CAB00D55EB9 /* AccountModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
 		};
-		FFF2E14F26D1479300D55EB9 /* Extention */ = {
+		FFF2E14F26D1479300D55EB9 /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
 				FFF2E15026D147AD00D55EB9 /* Extentions.swift */,
@@ -264,7 +342,7 @@
 				FF81472326D65B3900A3F757 /* ListItemShimmer.swift */,
 				FF81472526D65B7900A3F757 /* listContentItem.swift */,
 			);
-			path = Extention;
+			path = Reusables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +434,10 @@
 			files = (
 				FFF2E13726D1325100D55EB9 /* LaunchScreen.storyboard in Resources */,
 				FFF2E13426D1325100D55EB9 /* Assets.xcassets in Resources */,
+				FF6EE40426DB8EDC00D85C34 /* Favourites.storyboard in Resources */,
+				FF6EE3FE26DB8E8D00D85C34 /* Account.storyboard in Resources */,
 				FFF2E12F26D1325000D55EB9 /* Main.storyboard in Resources */,
+				FF6EE40126DB8EA900D85C34 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,27 +456,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF169D3426D8C47400E358FB /* ItemDisplayView.swift in Sources */,
 				FF62626B26D1EAE100561366 /* API.swift in Sources */,
-				FFF2E13226D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld in Sources */,
+				FFF2E13226D1325000D55EB9 /* FavData.xcdatamodeld in Sources */,
 				FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */,
 				FF81472026D6517A00A3F757 /* SearchModel.swift in Sources */,
 				FFF2E14E26D13CAB00D55EB9 /* AccountModel.swift in Sources */,
 				FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */,
 				FFF2E15526D1584200D55EB9 /* HomeViewTopContent.swift in Sources */,
 				FF81471C26D64B4000A3F757 /* SearchView.swift in Sources */,
+				FF881E8C26DD034C00832240 /* myFav.xcdatamodeld in Sources */,
 				FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */,
 				FF81472226D6521800A3F757 /* SearchVM.swift in Sources */,
 				FFF2E15126D147AD00D55EB9 /* Extentions.swift in Sources */,
 				FFF2E14C26D13C8E00D55EB9 /* AccountController.swift in Sources */,
 				FF81472426D65B3900A3F757 /* ListItemShimmer.swift in Sources */,
 				FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */,
+				FF8431D926DCB6FC007FFC83 /* SearchVC.swift in Sources */,
+				FF8431DD26DCC5E4007FFC83 /* FavouriteVC.swift in Sources */,
 				FF78C56F26D2AC6C0050B654 /* HomeModel.swift in Sources */,
 				FFF2E15326D1523A00D55EB9 /* ShimmerEffect.swift in Sources */,
 				FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */,
+				FF969EF426DCD74600FAF494 /* FavouriteModel.swift in Sources */,
 				FF81472626D65B7900A3F757 /* listContentItem.swift in Sources */,
+				FF8431DB26DCBB56007FFC83 /* UserProfile.swift in Sources */,
 				FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */,
 				FF78C57326D2C4000050B654 /* MainContentHomeVM.swift in Sources */,
 				FF78C56C26D2AC400050B654 /* TopPickVM.swift in Sources */,
+				FF969EF226DCD57000FAF494 /* ItemDisplayModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +498,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FF6EE3FF26DB8EA900D85C34 /* Search.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6EE40026DB8EA900D85C34 /* Base */,
+			);
+			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
 		FFF2E12D26D1325000D55EB9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -593,6 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLGCGGKJB5;
 				INFOPLIST_FILE = CleanRawgMockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,7 +697,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RawgMockApp.CleanRawgMockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -612,6 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLGCGGKJB5;
 				INFOPLIST_FILE = CleanRawgMockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,7 +717,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RawgMockApp.CleanRawgMockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -656,13 +754,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FFF2E13026D1325000D55EB9 /* CleanRawgMockApp.xcdatamodeld */ = {
+		FF881E8A26DD034C00832240 /* myFav.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF881E8B26DD034C00832240 /* myFav.xcdatamodel */,
+			);
+			currentVersion = FF881E8B26DD034C00832240 /* myFav.xcdatamodel */;
+			path = myFav.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FFF2E13026D1325000D55EB9 /* FavData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FFF2E13126D1325000D55EB9 /* CleanRawgMockApp.xcdatamodel */,
 			);
 			currentVersion = FFF2E13126D1325000D55EB9 /* CleanRawgMockApp.xcdatamodel */;
-			path = CleanRawgMockApp.xcdatamodeld;
+			path = FavData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

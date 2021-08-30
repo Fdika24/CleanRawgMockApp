@@ -51,6 +51,7 @@ class MainContentHome:ObservableObject {
                     self?.page+=1 // ini masih harus diperbaikin logicnya, sayang ga kepake
                 case .failure(let error):
                     print("the error : \(error)")
+                    self?.State = .failed
                 }
             } receiveValue: { [weak self] result in
                 self?.MainContent += result.results
@@ -63,6 +64,7 @@ class MainContentHome:ObservableObject {
 
 extension MainContentHome {
     func appendData(currentItem item: BasicHome?){
+        if self.State == .failed {return}
         guard let item = item else {
             fetchAPI()
             return

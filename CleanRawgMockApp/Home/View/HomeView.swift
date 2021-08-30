@@ -10,29 +10,32 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var homeTopPicks = TopPicks()
     @StateObject var homeContent = MainContentHome()
-    @State var showSearch:Bool = false
     @ViewBuilder var body: some View {
         ZStack{
             ScrollView{
                 VStack(spacing:0){
                     //MARK: Top Content of HomeView
                     // This view represent a content located on the very top of homeview
-                    HomeViewTopContent(showSearch: $showSearch)
+                    HomeViewTopContent()
+                    //TextField("makan",text:$userProfile.name)
+                   // Button("Save"){
+                        //ProfileModel.name = self.userProfile
+                    //}
                     //MARK: Slide View of HomeView
                     if homeTopPicks.topPicks.count == 0 {
                         ShimmerView(baseColor: .gray)
-                            .frame(width:UIScreen.width,height: 230)
+                            .frame(width:UIScreen.width,height: 300)
                     } else {
                         TabView{
                             ForEach(homeTopPicks.topPicks){data in
                                 Button(action: {print("Tapped..")}) {
                                     RemoteImage(url: data.image ?? "")
                                         .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                                        .frame(width:UIScreen.width,height: 230)
+                                        .frame(width:UIScreen.width,height: 300)
                                 }
                             }
                         }
-                        .frame(width:UIScreen.width,height: 230)
+                        .frame(width:UIScreen.width,height: 300)
                         .tabViewStyle(PageTabViewStyle())
                     }
                     //MARK: Main content - fixed
@@ -62,7 +65,6 @@ struct HomeView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $showSearch, content: SearchView.init)
         .frame(width: UIScreen.width, height: UIScreen.height)
         .ignoresSafeArea()
     }
