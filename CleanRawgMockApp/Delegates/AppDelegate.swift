@@ -11,6 +11,15 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if let rootVC = window?.rootViewController as? TabBar {
+            rootVC.container = persistentContainer
+        }
+        return true
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
@@ -19,22 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
-            } else {
-                print("makan bang")
             }
         })
         return container
     }()
 
-    
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if let rootVC = window?.rootViewController as? ViewController {
-            rootVC.container = persistentContainer
-        }
-        return true
-    }
 
     // MARK: UISceneSession Lifecycle
 

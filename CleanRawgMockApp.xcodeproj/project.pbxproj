@@ -27,6 +27,8 @@
 		FF8431DB26DCBB56007FFC83 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8431DA26DCBB56007FFC83 /* UserProfile.swift */; };
 		FF8431DD26DCC5E4007FFC83 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8431DC26DCC5E4007FFC83 /* FavouriteVC.swift */; };
 		FF881E8C26DD034C00832240 /* myFav.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF881E8A26DD034C00832240 /* myFav.xcdatamodeld */; };
+		FF881E8F26DD2C8C00832240 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF881E8E26DD2C8C00832240 /* TabBar.swift */; };
+		FF881E9126DD438200832240 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF881E9026DD438200832240 /* Persistance.swift */; };
 		FF969EF226DCD57000FAF494 /* ItemDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF969EF126DCD57000FAF494 /* ItemDisplayModel.swift */; };
 		FF969EF426DCD74600FAF494 /* FavouriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF969EF326DCD74600FAF494 /* FavouriteModel.swift */; };
 		FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12726D1325000D55EB9 /* AppDelegate.swift */; };
@@ -78,6 +80,8 @@
 		FF8431DA26DCBB56007FFC83 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		FF8431DC26DCC5E4007FFC83 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		FF881E8B26DD034C00832240 /* myFav.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myFav.xcdatamodel; sourceTree = "<group>"; };
+		FF881E8E26DD2C8C00832240 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		FF881E9026DD438200832240 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		FF969EF126DCD57000FAF494 /* ItemDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplayModel.swift; sourceTree = "<group>"; };
 		FF969EF326DCD74600FAF494 /* FavouriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModel.swift; sourceTree = "<group>"; };
 		FFF2E12426D1325000D55EB9 /* CleanRawgMockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRawgMockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +146,6 @@
 		FF6EE40226DB8EC600D85C34 /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
-				FF881E8126DCD93300832240 /* Persistance */,
 				FF6EE40626DB8EE900D85C34 /* ViewModel */,
 				FF6EE40526DB8EE500D85C34 /* View */,
 				FF6EE40326DB8EDC00D85C34 /* Favourites.storyboard */,
@@ -216,6 +219,7 @@
 		FF881E8126DCD93300832240 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				FF881E9026DD438200832240 /* Persistance.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -274,6 +278,7 @@
 		FFF2E12626D1325000D55EB9 /* CleanRawgMockApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF881E8126DCD93300832240 /* Persistance */,
 				FF881E8D26DD04DF00832240 /* Delegates */,
 				FF78C56D26D2AC5E0050B654 /* Model */,
 				FF6EE40226DB8EC600D85C34 /* Favourites */,
@@ -285,6 +290,7 @@
 				FF62627B26D1F1A000561366 /* PushNotif */,
 				FFF2E14426D13A9200D55EB9 /* Account */,
 				FFF2E13326D1325100D55EB9 /* Assets.xcassets */,
+				FF881E8E26DD2C8C00832240 /* TabBar.swift */,
 				FFF2E13526D1325100D55EB9 /* LaunchScreen.storyboard */,
 				FFF2E13826D1325100D55EB9 /* Info.plist */,
 				FF62627A26D1ED6F00561366 /* Config.xcconfig */,
@@ -469,6 +475,7 @@
 				FFF2E12826D1325000D55EB9 /* AppDelegate.swift in Sources */,
 				FF81472226D6521800A3F757 /* SearchVM.swift in Sources */,
 				FFF2E15126D147AD00D55EB9 /* Extentions.swift in Sources */,
+				FF881E8F26DD2C8C00832240 /* TabBar.swift in Sources */,
 				FFF2E14C26D13C8E00D55EB9 /* AccountController.swift in Sources */,
 				FF81472426D65B3900A3F757 /* ListItemShimmer.swift in Sources */,
 				FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */,
@@ -478,6 +485,7 @@
 				FFF2E15326D1523A00D55EB9 /* ShimmerEffect.swift in Sources */,
 				FF78C57126D2B7130050B654 /* LoadRemoteImage.swift in Sources */,
 				FF969EF426DCD74600FAF494 /* FavouriteModel.swift in Sources */,
+				FF881E9126DD438200832240 /* Persistance.swift in Sources */,
 				FF81472626D65B7900A3F757 /* listContentItem.swift in Sources */,
 				FF8431DB26DCBB56007FFC83 /* UserProfile.swift in Sources */,
 				FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */,

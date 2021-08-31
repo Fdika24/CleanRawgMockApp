@@ -10,24 +10,18 @@ import SwiftUI
 import CoreData
 
 class ViewController: UIViewController {
-    
-    var container: NSPersistentContainer!
-    let childView:UIHostingController = {
-        return UIHostingController(rootView: HomeView())
-    }()
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let favVC = segue.destination as? FavVC {
-            favVC.container = container
-        }
-       }
+    var container: NSPersistentContainer! // <-- i dont think i need this one
+    var childView:UIHostingController = UIHostingController(
+        rootView: AnyView(HomeView()
+                            .environment(\.managedObjectContext, PersistenceController1.shared.container.viewContext))
+    )
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard container != nil else {
-            fatalError("This view needs a persistent container.")
+        if let tabBarVC = self.tabBarController as? TabBar {
+            self.container = tabBarVC.container
         }
-        
         view.addSubview(childView.view)
         childView.view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -40,5 +34,10 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+
+class myCoreData:ObservableObject {
+    @Published var context = PersistentContainer().viewContext
 }
 

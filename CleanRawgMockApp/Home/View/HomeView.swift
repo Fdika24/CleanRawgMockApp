@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+   // @Environment(\.managedObjectContext) var managedObjectContext:myCoreData
+    @Environment(\.managedObjectContext) var managedObjectContext
     @StateObject var homeTopPicks = TopPicks()
     @StateObject var homeContent = MainContentHome()
     @ViewBuilder var body: some View {
@@ -69,9 +71,10 @@ struct HomeView: View {
         .ignoresSafeArea()
     }
 }
-
+/*
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
+*/
