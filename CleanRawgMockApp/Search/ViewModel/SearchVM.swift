@@ -28,7 +28,6 @@ class Searching:ObservableObject {
     
     init() {
     }
-    
     func fetchData(kase:appendState = .new) {
         if kase == .new {
             self.page = 1

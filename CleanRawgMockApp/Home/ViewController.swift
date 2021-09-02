@@ -12,8 +12,7 @@ import CoreData
 class ViewController: UIViewController {
     var container: NSPersistentContainer! // <-- i dont think i need this one
     var childView:UIHostingController = UIHostingController(
-        rootView: AnyView(HomeView()
-                            .environment(\.managedObjectContext, PersistenceController1.shared.container.viewContext))
+        rootView: AnyView(HomeView())
     )
 
     

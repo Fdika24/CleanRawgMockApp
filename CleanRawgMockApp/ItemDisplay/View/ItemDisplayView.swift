@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ItemDisplayView: View {
+    @State var itemOpacity:Double = 0
     
     init() {}
+    
     var body: some View {
         ZStack(alignment:.top){
             ScrollView {
@@ -20,6 +22,16 @@ struct ItemDisplayView: View {
                         .frame(width: UIScreen.width, height: 300)
                     Group {
                         Text("Title")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                        Text("released")
+                            .font(.headline)
+                        Text("rating")
+                            .font(.subheadline)
+                            .padding(.bottom)
+                        Text("Desc")
+                            .font(.caption)
+                            .fontWeight(.regular)
                     }.padding(.horizontal)
                     Spacer()
                 }
@@ -29,13 +41,21 @@ struct ItemDisplayView: View {
                     .foregroundColor(.white)
                     .ignoresSafeArea(edges: .top)
                     .frame(width: UIScreen.width, height: 20)
+                    .opacity(itemOpacity)
                 HStack{
+                    Image(systemName: "arrow.backward")
+                    Spacer()
                     Text("The Name")
+                        .opacity(itemOpacity)
+                    Spacer()
+                    Image(systemName: "bookmark")
                 }
+                .foregroundColor(.white)
+                .padding(.horizontal)
+                .padding(.bottom)
                 .frame(width:UIScreen.width)
-                .background(Color.white)
-            }
-            .opacity(0)
+                .background(Color.white.opacity(Double(itemOpacity)))
+            }.animation(.easeInOut)
         }
     }
 }

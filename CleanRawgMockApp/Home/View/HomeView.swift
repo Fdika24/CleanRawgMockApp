@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-   // @Environment(\.managedObjectContext) var managedObjectContext:myCoreData
-    @Environment(\.managedObjectContext) var managedObjectContext
     @StateObject var homeTopPicks = TopPicks()
     @StateObject var homeContent = MainContentHome()
     @ViewBuilder var body: some View {

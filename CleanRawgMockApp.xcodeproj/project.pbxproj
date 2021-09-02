@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FF169D3426D8C47400E358FB /* ItemDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF169D3326D8C47400E358FB /* ItemDisplayView.swift */; };
+		FF2DB6EA26DFB426009674BD /* PersistanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2DB6E926DFB426009674BD /* PersistanceProvider.swift */; };
+		FF2DB6EC26DFBDAB009674BD /* dumdum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2DB6EB26DFBDAB009674BD /* dumdum.swift */; };
+		FF2DB6EE26DFBEE4009674BD /* FavVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2DB6ED26DFBEE4009674BD /* FavVM.swift */; };
+		FF2DB6F326E0A9C8009674BD /* favView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2DB6F226E0A9C8009674BD /* favView.swift */; };
 		FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */; };
 		FF62626B26D1EAE100561366 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62626A26D1EAE100561366 /* API.swift */; };
 		FF62627326D1ED1200561366 /* CleanRawgMockAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62627226D1ED1200561366 /* CleanRawgMockAppTests.swift */; };
@@ -35,7 +39,6 @@
 		FFF2E12A26D1325000D55EB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */; };
 		FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E12B26D1325000D55EB9 /* ViewController.swift */; };
 		FFF2E12F26D1325000D55EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E12D26D1325000D55EB9 /* Main.storyboard */; };
-		FFF2E13226D1325000D55EB9 /* FavData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E13026D1325000D55EB9 /* FavData.xcdatamodeld */; };
 		FFF2E13426D1325100D55EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E13326D1325100D55EB9 /* Assets.xcassets */; };
 		FFF2E13726D1325100D55EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF2E13526D1325100D55EB9 /* LaunchScreen.storyboard */; };
 		FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2E14226D134A700D55EB9 /* HomeView.swift */; };
@@ -58,6 +61,10 @@
 
 /* Begin PBXFileReference section */
 		FF169D3326D8C47400E358FB /* ItemDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplayView.swift; sourceTree = "<group>"; };
+		FF2DB6E926DFB426009674BD /* PersistanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceProvider.swift; sourceTree = "<group>"; };
+		FF2DB6EB26DFBDAB009674BD /* dumdum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dumdum.swift; sourceTree = "<group>"; };
+		FF2DB6ED26DFBEE4009674BD /* FavVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavVM.swift; sourceTree = "<group>"; };
+		FF2DB6F226E0A9C8009674BD /* favView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favView.swift; sourceTree = "<group>"; };
 		FF57A48826D395B80088AD86 /* ForEachEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachEnumerated.swift; sourceTree = "<group>"; };
 		FF62626A26D1EAE100561366 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FF62627026D1ED1200561366 /* CleanRawgMockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanRawgMockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +96,6 @@
 		FFF2E12926D1325000D55EB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFF2E12B26D1325000D55EB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFF2E12E26D1325000D55EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FFF2E13126D1325000D55EB9 /* CleanRawgMockApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanRawgMockApp.xcdatamodel; sourceTree = "<group>"; };
 		FFF2E13326D1325100D55EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF2E13626D1325100D55EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF2E13826D1325100D55EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		FF6EE40526DB8EE500D85C34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF2DB6F226E0A9C8009674BD /* favView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 		FF6EE40626DB8EE900D85C34 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FF2DB6ED26DFBEE4009674BD /* FavVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -179,7 +187,7 @@
 		FF78C56D26D2AC5E0050B654 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FFF2E13026D1325000D55EB9 /* FavData.xcdatamodeld */,
+				FF881E8126DCD93300832240 /* Persistance */,
 				FF78C56E26D2AC6C0050B654 /* HomeModel.swift */,
 				FF81471F26D6517A00A3F757 /* SearchModel.swift */,
 				FF8431DA26DCBB56007FFC83 /* UserProfile.swift */,
@@ -220,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				FF881E9026DD438200832240 /* Persistance.swift */,
+				FF2DB6E926DFB426009674BD /* PersistanceProvider.swift */,
+				FF2DB6EB26DFBDAB009674BD /* dumdum.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -278,7 +288,6 @@
 		FFF2E12626D1325000D55EB9 /* CleanRawgMockApp */ = {
 			isa = PBXGroup;
 			children = (
-				FF881E8126DCD93300832240 /* Persistance */,
 				FF881E8D26DD04DF00832240 /* Delegates */,
 				FF78C56D26D2AC5E0050B654 /* Model */,
 				FF6EE40226DB8EC600D85C34 /* Favourites */,
@@ -464,11 +473,11 @@
 			files = (
 				FF169D3426D8C47400E358FB /* ItemDisplayView.swift in Sources */,
 				FF62626B26D1EAE100561366 /* API.swift in Sources */,
-				FFF2E13226D1325000D55EB9 /* FavData.xcdatamodeld in Sources */,
 				FFF2E12C26D1325000D55EB9 /* ViewController.swift in Sources */,
 				FF81472026D6517A00A3F757 /* SearchModel.swift in Sources */,
 				FFF2E14E26D13CAB00D55EB9 /* AccountModel.swift in Sources */,
 				FF57A48926D395B80088AD86 /* ForEachEnumerated.swift in Sources */,
+				FF2DB6EE26DFBEE4009674BD /* FavVM.swift in Sources */,
 				FFF2E15526D1584200D55EB9 /* HomeViewTopContent.swift in Sources */,
 				FF81471C26D64B4000A3F757 /* SearchView.swift in Sources */,
 				FF881E8C26DD034C00832240 /* myFav.xcdatamodeld in Sources */,
@@ -478,6 +487,8 @@
 				FF881E8F26DD2C8C00832240 /* TabBar.swift in Sources */,
 				FFF2E14C26D13C8E00D55EB9 /* AccountController.swift in Sources */,
 				FF81472426D65B3900A3F757 /* ListItemShimmer.swift in Sources */,
+				FF2DB6EC26DFBDAB009674BD /* dumdum.swift in Sources */,
+				FF2DB6EA26DFB426009674BD /* PersistanceProvider.swift in Sources */,
 				FFF2E14326D134A700D55EB9 /* HomeView.swift in Sources */,
 				FF8431D926DCB6FC007FFC83 /* SearchVC.swift in Sources */,
 				FF8431DD26DCC5E4007FFC83 /* FavouriteVC.swift in Sources */,
@@ -492,6 +503,7 @@
 				FF78C57326D2C4000050B654 /* MainContentHomeVM.swift in Sources */,
 				FF78C56C26D2AC400050B654 /* TopPickVM.swift in Sources */,
 				FF969EF226DCD57000FAF494 /* ItemDisplayModel.swift in Sources */,
+				FF2DB6F326E0A9C8009674BD /* favView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,16 +781,6 @@
 			);
 			currentVersion = FF881E8B26DD034C00832240 /* myFav.xcdatamodel */;
 			path = myFav.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		FFF2E13026D1325000D55EB9 /* FavData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FFF2E13126D1325000D55EB9 /* CleanRawgMockApp.xcdatamodel */,
-			);
-			currentVersion = FFF2E13126D1325000D55EB9 /* CleanRawgMockApp.xcdatamodel */;
-			path = FavData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
